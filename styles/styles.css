@@ -44,18 +44,25 @@ body {
     display: block;    
 }
 
+#YouTubePlayer {
+    background-color: #000;
+    background-position: center center;
+    background-size: cover;
+    cursor: pointer;
+    overflow: hidden;
+    padding-top: 56.25%;
+    position: relative;
+    width: 100%;
+}
+
 .section {
     display: block;
     position: relative;
-/*    margin: auto;*/
     padding-top: 20px;
     padding-bottom: 20px;
-/*    width: 100%;*/
-/*    padding-left: 450px;*/
     background-color: #F5F5F5;
     top: 400px;
-    
-        margin-left: auto;
+    margin-left: auto;
     margin-right: auto;
     max-width: 730px;
     width: 85%;
@@ -79,4 +86,40 @@ p2 {
 @font-face {
     font-family: Avenir-Heavy;
     src: url("Avenir-Heavy.woff");
+}
+
+.completed {
+    position: relative;
+    color: green;
+    display: inline-block;
+}
+
+.completed .completedText {
+  visibility: hidden;
+  width: 650px;
+  background-color: grey;
+  color: #fff;
+/*  text-align: center;*/
+  border-radius: 6px;  
+    padding-left: 10px;
+    padding-bottom: 20px;
+  /* Position the completedText */
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+  margin-left: -75px;
+}
+
+.completed:hover .completedText {
+  visibility: visible;
+}
+.completed::after {
+  border-bottom: 0.07em solid;
+  content: "";
+  left: 0;
+  margin-top: calc(0.2em / 2 * -1);
+  position: absolute;
+  right: 0;
+  top: 60%;
 }
