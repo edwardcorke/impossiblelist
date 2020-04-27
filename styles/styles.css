@@ -92,9 +92,10 @@ p2 {
     position: relative;
     color: green;
     display: inline-block;
-}
+}   
 
 .completed .completedText {
+    visibility: hidden;
   width: 650px;
   background-color: grey;
   color: #fff;
@@ -111,9 +112,15 @@ p2 {
 }
 
 .completed:hover .completedText {
-/*  visibility: visible;*/
+  visibility: visible;
     display: block;
 }
+
+.completed:active .completedText {
+    visibility: visible;
+    display: block;
+}
+
 .completed::after {
   border-bottom: 0.07em solid;
   content: "";
