@@ -111,7 +111,7 @@ p2 {
   margin-left: -75px;
 }
 
-.completed:hover .completedText {
+.completed:active .completedText {
   visibility: visible;
 }
 .completed::after {
