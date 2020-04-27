@@ -78,6 +78,11 @@ p2 {
     font-family: Avenir-Light;
 }
 
+p3 {
+    font-size: 26px;
+    font-family: Avenir-Heavy;
+}
+
 @font-face {
     font-family: Avenir-Light;
     src: url("Avenir-Light.woff");
@@ -96,37 +101,50 @@ p2 {
 
 .completed .completedText {
     visibility: hidden;
-  width: 650px;
-  background-color: grey;
-  color: #fff;
-/*  text-align: center;*/
-  border-radius: 6px;  
+    width: 650px;
+    background-color: rgba(156, 156, 156, 1);
+
+    
+    color: #fff;
+    border-radius: 6px;  
     padding-left: 10px;
     padding-bottom: 20px;
+    padding-top: 5px;
   /* Position the completedText */
-  position: absolute;
-  z-index: 1;
-  top: 100%;
-  left: 50%;
-  margin-left: -75px;
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    margin-left: -75px;
+}
+
+.completedTextBackground {
+        filter:blur(4px);
+    -o-filter:blur(4px);
+    -ms-filter:blur(4px);
+    -moz-filter:blur(4px);
+    -webkit-filter:blur(4px);
 }
 
 .completed:hover .completedText {
-  visibility: visible;
-    display: block;
+    visibility: visible;
 }
 
 .completed:active .completedText {
     visibility: visible;
-    display: block;
 }
 
 .completed::after {
-  border-bottom: 0.07em solid;
-  content: "";
-  left: 0;
-  margin-top: calc(0.2em / 2 * -1);
-  position: absolute;
-  right: 0;
-  top: 60%;
+    border-bottom: 0.07em solid;
+    content: "";
+    left: 0;
+    margin-top: calc(0.2em / 2 * -1);
+    position: absolute;
+    right: 0;
+    top: 60%;
+}
+
+#halfMarathonCompleted > img, #hundredKmCycleCompleted > img {
+    max-height: 400px;
+    max-width: 600px;
 }
