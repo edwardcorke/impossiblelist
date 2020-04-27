@@ -46,9 +46,9 @@
                 <li>Cycle 100km</li>
                 <li>Cycle 100miles</li>
                 <li>
-                    <span class="completed">
+                    <span class="completed" onclick="myFunction()">
                         Run a half marathon
-                        <span class="completedText">
+                        <span id="yeetClass" class="completedText">
                             Completed: 7th April 2019<br><br>
                             <img src="images/B.jpg">
                         </span>
@@ -140,5 +140,16 @@
             <p2>Live in another country</p2>
         </div>
         
+        
+        <script>
+            function myFunction() {
+              var x = document.getElementById("yeetClass");
+              if (x.style.display === "none") {
+                x.style.display = "block";
+              } else {
+                x.style.display = "none";
+              }
+            }
+        </script>
     </body>
 </html>

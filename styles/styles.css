@@ -95,7 +95,6 @@ p2 {
 }
 
 .completed .completedText {
-  visibility: hidden;
   width: 650px;
   background-color: grey;
   color: #fff;
@@ -111,8 +110,9 @@ p2 {
   margin-left: -75px;
 }
 
-.completed:active .completedText {
-  visibility: visible;
+.completed:hover .completedText {
+/*  visibility: visible;*/
+    display: block;
 }
 .completed::after {
   border-bottom: 0.07em solid;
