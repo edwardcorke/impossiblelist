@@ -36,7 +36,7 @@ body {
     height: 500px;
     margin: auto;
     z-index: 2;
-    top: 350px;
+    top: 330px;
 }
 
 #profileImg {
@@ -48,7 +48,7 @@ body {
 #profileBar {
     width: 730px;
     height: 7px;
-    top: 560px;
+    top: 565px;
     margin: auto;
     position: relative;
     background-color: #F5F5F5;
