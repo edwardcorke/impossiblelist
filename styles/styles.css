@@ -41,7 +41,17 @@ body {
 
 #profileImg {
     width: 100%;
-    display: block;    
+    display: block;
+    border: 15px solid white;
+}
+
+#profileBar {
+    width: 730px;
+    height: 7px;
+    top: 560px;
+    margin: auto;
+    position: relative;
+    background-color: #F5F5F5;
 }
 
 #YouTubePlayer {
@@ -50,9 +60,12 @@ body {
     background-size: cover;
     cursor: pointer;
     overflow: hidden;
-    padding-top: 56.25%;
+/*    padding-top: 56.25%;*/
     position: relative;
     width: 100%;
+    height: 100%;
+    max-width: 710px;
+    max-height: 410px;
 }
 
 .section {
@@ -60,12 +73,18 @@ body {
     position: relative;
     padding-top: 20px;
     padding-bottom: 20px;
+    padding-left: 20px;
     background-color: #F5F5F5;
-    top: 400px;
+    top: 300px;
     margin-left: auto;
     margin-right: auto;
     max-width: 730px;
     width: 85%;
+}
+
+ul {
+    padding-left: 20px;
+    margin: 0px;
 }
 
 p1 {
@@ -81,6 +100,10 @@ p2 {
 p3 {
     font-size: 26px;
     font-family: Avenir-Heavy;
+}
+
+.completed.inProgress {
+    color: orange;
 }
 
 @font-face {
@@ -102,11 +125,9 @@ p3 {
 .completed .completedText {
     visibility: hidden;
     width: 650px;
-    background-color: rgba(156, 156, 156, 1);
-
-    
+    background-color: rgba(156, 156, 156, 1);    
     color: #fff;
-    border-radius: 6px;  
+    border-radius: 4px;  
     padding-left: 10px;
     padding-bottom: 20px;
     padding-top: 5px;
@@ -114,16 +135,13 @@ p3 {
     position: absolute;
     z-index: 1;
     top: 100%;
-    left: 50%;
-    margin-left: -75px;
+    left: 0%;
+/*    margin-left: -75px;*/
 }
 
-.completedTextBackground {
-        filter:blur(4px);
-    -o-filter:blur(4px);
-    -ms-filter:blur(4px);
-    -moz-filter:blur(4px);
-    -webkit-filter:blur(4px);
+.completed .completedText:link {
+    color: inherit;
+    text-decoration: inherit;
 }
 
 .completed:hover .completedText {
@@ -134,7 +152,7 @@ p3 {
     visibility: visible;
 }
 
-.completed::after {
+.completed.finished::after {
     border-bottom: 0.07em solid;
     content: "";
     left: 0;
@@ -144,7 +162,7 @@ p3 {
     top: 60%;
 }
 
-#halfMarathonCompleted > img, #hundredKmCycleCompleted > img {
+#halfMarathonCompleted > img, #hundredKmCycleCompleted > img, #newRecipes > img {
     max-height: 400px;
     max-width: 600px;
 }
