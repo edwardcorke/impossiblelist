@@ -109,6 +109,12 @@ p4 {
     color: white
 }
 
+p5 {
+    font-size: 9px;
+    font-family: Avenir-Light;
+    color: #b5b5b5
+}
+
 .completed.inProgress {
     color: orange;
 }
