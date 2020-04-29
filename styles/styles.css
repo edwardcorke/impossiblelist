@@ -35,6 +35,7 @@ body {
     width: 400px;
     height: 500px;
     margin: auto;
+    padding-right: 30px;
     z-index: 2;
     top: 330px;
 }
@@ -86,8 +87,6 @@ body {
     position: relative;
     padding-top: 75px;
     top: 300px;
-/*    background-color: #FFFFFF;*/
-/*    background-color: aqua;*/
     height: 50px;
     margin: auto;
     max-width: 750px;
