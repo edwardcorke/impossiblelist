@@ -68,6 +68,11 @@ body {
     max-height: 410px;
 }
 
+a {
+  color: white;
+  text-decoration: none; /* no underline */
+}
+
 .section {
     display: block;
     position: relative;
@@ -200,7 +205,7 @@ p5 {
     height: 315px;
     background-color: #212121;
     text-align: center;
-    margin-top: 350px;
+    margin-top: 500px;
     padding-top: 50px;
 }
 
